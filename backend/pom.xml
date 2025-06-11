@@ -183,6 +183,10 @@
 			<version>4.4.0</version> <!-- or latest -->
 		</dependency>
 
+ <dependency>
+        <groupId>org.mongodb</groupId>
+        <artifactId>mongodb-driver-sync</artifactId>
+    </dependency>
 
 	</dependencies>
 
@@ -214,5 +218,17 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver-bom</artifactId>
+            <version>5.5.1</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
 
 </project>
