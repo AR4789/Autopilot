@@ -1,0 +1,40 @@
+# --- General OS/System Files ---
+.DS_Store
+Thumbs.db
+
+# --- Global IDE Settings ---
+.idea/
+*.iml
+*.log
+
+# --- Node/React: frontend ---
+/frontend/node_modules/
+frontend/.env
+/frontend/build/
+/frontend/.parcel-cache/
+
+# --- Java/Spring Boot: backend ---
+/backend/target/
+backend/.env
+/backend/.classpath
+/backend/.project
+/backend/.settings/
+/backend/*.log
+
+# --- Maven and Gradle ---
+**/build/
+**/out/
+**/.gradle/
+**/.mvn/
+**/logs/
+**/.DS_Store
+
+# --- Temporary files ---
+*.tmp
+*.swp
+*~
+
+# --- OS Specific ---
+ehthumbs.db
+Icon?
+

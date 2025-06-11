@@ -1,0 +1,12 @@
+{
+  "basic" : [ {
+    "type" : "shell",
+    "config" : {
+      "serverIp" : "10.100.22.191",
+      "serverUsername" : "ec2-user",
+      "shellScriptFilepath" : "/tmp/upload_2127102498658278941.sh",
+      "privateKeyPemFilepath" : "/tmp/upload_11835721826002537620.pem",
+      "pemFilePassword" : "ClinicalSafety100"
+    }
+  } ]
+}
