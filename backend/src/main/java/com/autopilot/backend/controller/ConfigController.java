@@ -47,7 +47,7 @@ public class ConfigController {
     public boolean isProd() {
     return !"dev".equals(activeProfile);
 }
-    @PostMapping("/run-config")
+    @PostMapping("/auth/run-config")
     public ResponseEntity<String> runConfig(@RequestBody Map<String, Object> configMap) {
         try {
             ObjectMapper mapper = new ObjectMapper();
@@ -80,7 +80,7 @@ public class ConfigController {
         }
     }
 
-    @PostMapping("/upload-file")
+    @PostMapping("/auth/upload-file")
     public ResponseEntity<String> uploadFile(@RequestParam("file") MultipartFile file,
             @RequestParam("type") String type) {
         try {
